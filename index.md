@@ -1,4 +1,4 @@
-# Hi! I'm jerry!
+# This my study Homepage~ Hello there~
 
 ## Welcome to GitHub Pages
 
