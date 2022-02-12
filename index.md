@@ -2,7 +2,7 @@
 
 https://zergswim.github.io/study/
 
-TEST <iframe src="http://www.naver.com"></iframe>
+TEST <iframe src="https://github.com/zergswim/study/blob/main/WebGL/index.html" width="1024" height="968"></iframe>
 
 ## Welcome to GitHub Pages
 
