@@ -8,7 +8,7 @@ public class PlayerBall : MonoBehaviour
     Rigidbody rigid;
     void Awake()
     {
-        rigid = GetComponent<Rigidbody>();
+        rigid = GetComponent<Rigidbody>();        
     }
 
     void Update()
