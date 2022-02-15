@@ -6,17 +6,22 @@ public class PlayerBall : MonoBehaviour
 {
     public float JumpPower;
     Rigidbody rigid;
+    AudioSource audio;
+
     void Awake()
     {
-        rigid = GetComponent<Rigidbody>();        
+        rigid = GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
     }
 
     void Update()
     {
         if(Input.GetButtonDown("Jump"))
+        { 
             rigid.AddForce(new Vector3(0, JumpPower, 0), ForceMode.Impulse);
+        }
 
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             //Debug.Log(Camera.main.pixelWidth/2-Input.mousePosition.x);
 
@@ -24,6 +29,8 @@ public class PlayerBall : MonoBehaviour
                 rigid.AddForce(new Vector3(10, JumpPower, 0), ForceMode.Impulse);
             else
                 rigid.AddForce(new Vector3(-10, JumpPower, 0), ForceMode.Impulse);
+
+            audio.Play();
         }
     }
 
